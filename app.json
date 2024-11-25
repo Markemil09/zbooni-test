@@ -8,13 +8,19 @@
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#101820"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.zbooni"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/images/splash-icon.png",
+        "backgroundColor": "#101820"
       }
     },
     "web": {
@@ -25,12 +31,11 @@
     "plugins": [
       "expo-router",
       [
-        "expo-splash-screen",
+        "expo-font",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "fonts": [
+            "node_modules/@expo-google-fonts/montserrat/Montserrat_400Regular.ttf"
+          ]
         }
       ]
     ],
